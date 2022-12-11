@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM | VALIDATION</title>
+    <script src="validate.js"></script>
+</head>
+
+<style>
+    body {
+        background-color: lightgreen;
+    }
+
+    p {
+        font-size: large;
+        display: inline-block;
+        
+
+
+    }
+
+    input {
+        font-size: medium;
+        text-align: left;
+        height: 15px;
+        padding: 5px 10px;
+
+
+
+    }
+
+    .mid {
+        width: 400px;
+        clear: both;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        left: 50%;
+        top: 50%;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: -320px 0 0 -250px;
+        padding: 50px 50px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        background-color: rgb(241, 240, 240);
+
+    }
+
+    button {
+        font-size: large;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: rgb(237, 111, 111);
+
+    }
+
+</style>
+
+<script>
+    function reverseArr() {
+        let arr = [5];
+        arr[0] = document.querySelector("#first").value;
+        arr[1] = document.querySelector("#second").value;
+        arr[2] = document.querySelector("#three").value;
+        arr[3] = document.querySelector("#four").value;
+        arr[4] = document.querySelector("#five").value;
+
+        let rev = [];
+
+        for(let i=arr.length-1;i>=0;i--)
+        {
+            rev.push(arr[i]);
+        }
+
+        
+       
+        document.querySelector("#reverse").innerHTML = "Reversed Array = " + "[" + rev + "]";
+
+    }
+</script>
+
+<body>
+   
+        <h1 style="text-align: center; padding-top: 50px;">ARRAY OPERATIONS USING JAVASCRIPT</h1>
+        <div style="overflow-x:auto;">
+        <div class="mid">
+            <form name="regform" onsubmit = "return false">
+                <p>
+                    First Element* : <input type="text" id="first">
+                </p>
+
+                <p>
+                    Second Element* : <input type="text" id="second">
+                </p>
+
+                <p>
+                    Third Element* : <input type="text" id="three">
+                </p>
+
+                <p>
+                    Fourth Element* : <input type="text" id="four">
+                </p>
+
+                <p>
+                    Fifth Element* : <input type="text" id="five">
+                </p>
+
+                
+                <br><br><br>
+                <button type=""  onclick = "reverseArr()">Reverse</button>
+                <br><br>
+                <!-- <input type="submit" value="Submit" name="submit"> -->
+               
+                
+            </form>
+            <div id="reverse" style="font-size: large;"></div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
