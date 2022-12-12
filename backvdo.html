@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        height: 10%;
+        padding: 20px;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .img1 {
+        padding: 20px;
+        height: 8%;
+        width: 8%;
+        padding-left: 7%;
+        border-radius: 30px;
+    }
+    
+    .dir {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .whole-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .whole-container .row img {
+        height: 4rem;
+        border-radius: 5px;
+        margin-bottom: .5rem;
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+    }
+    
+    #temppara {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        width: 50%;
+    }
+    
+    .whole-container .row:hover img {
+        -webkit-transform: translateY(-1rem);
+        transform: translateY(-1rem);
+    }
+    
+    .whole-container .row {
+        text-align: center;
+        padding: 3rem;
+        background: var(--white);
+        background-color: #d3d3d3;
+        -webkit-box-shadow: var(--box-shadow);
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+    }
+    
+    .row {
+        width: 300px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-color: #d3d3d3;
+        margin: 10px;
+        padding: 3px;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="itcomp.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <div class="dir">
+            <img class="img1" src="https://static.vecteezy.com/system/resources/previews/000/403/516/original/modern-company-logo-design-vector.jpg">
+            <p style="font-size:50px; color: rgb(41, 79, 95);" align="center">
+                <b>EUROMICRON</b>
+                <br>
+                <b style="font-size: 25px;">TUNED TO
+                    THE PULSE OF THE DIGITAL FUTURE</b>
+            </p>
+        </div>
+        <p style="font-size:18px; color: rgb(17, 16, 16);" id="temppara">
+            <br> The Group's Areas of Expertise<br> They operate under central coordination and are networked, yet flexible
+            <br> With its solutions for Digital Buildings, Smart Industry and Critical Infrastructures<br> the euromicron Group is the partner to small and medium-sized enterprises, large companies and public-sector organizations.
+            <br> Underpinned by expertise and technologies in the field of IT, network and security infrastructures,
+            <br> the euromicron Group’s solutions dovetail seamlessly into the innovative concepts for the Internet of Things.
+            <br><br>
+        </p>
+        <div class="content">
+            <p style="font-size: 15px;"><b>Contact Us:</b><br><br>Address: Plot No.1, Rajiv Gandhi Infotech Park, Hinjawadi, Phase-I, Pune <br>Phone Number:+91 9876543211/15<br>E-mail: abccompany@gmail.com
+            </p>
+        </div>
+
+        <div class="whole-container">
+
+            <div class="row">
+                <img src="https://th.bing.com/th/id/OIP.LyfA9zXu75qpEicgMqobMAHaFj?pid=ImgDet&rs=1" alt="" height="10px" ;>
+                <h3>Laptops and PC setups Available</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+            </div>
+            <div class="row">
+                <img src="https://www.dghelp.com/wp-content/uploads/2019/12/DGHelp_2000X600_DeliveryInstallation_Router-Installation.jpg" alt="">
+                <h3>Router Installation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+            </div>
+            <div class="row">
+                <img src="https://th.bing.com/th/id/OIP.nIExDDuuF-Cm1xabz3b6bQHaI1?pid=ImgDet&rs=1" alt="">
+                <h3>Tech Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
